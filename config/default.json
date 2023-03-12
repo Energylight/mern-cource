@@ -1,0 +1,5 @@
+{
+    "port": 4200,
+    "jwtSecret": "energylight87 saitama mern",
+    "mongoUri": "mongodb+srv://energylight87:rraQRxS49qjC9qWn@cluster0.uly54aa.mongodb.net/app?retryWrites=true&w=majority"
+}
