@@ -16,6 +16,10 @@ useEffect( () => {
     clearError()
 }, [error, message, clearError])
 
+useEffect(()=>{
+    window.M.updateTextFields()
+}, [])
+
 const changeHandler  = event => {
     setForm({ ...form, [event.target.name]: event.target.value })
 }
@@ -46,6 +50,7 @@ const loginHandler = async () => {
                     <div>
 
                         <div className="input-field">
+                        
                         <input 
                             placeholder="Введите Email" 
                             id="email" 
@@ -54,10 +59,11 @@ const loginHandler = async () => {
                             className="yellow-input"
                             onChange={changeHandler}             
                         />                        
-                        
+                        <label htmlFor="email">Email</label>
                         </div>
 
                         <div className="input-field">
+                        
                         <input 
                             placeholder="Введите Пароль" 
                             id="password" 
@@ -66,7 +72,7 @@ const loginHandler = async () => {
                             className="yellow-input"
                             onChange={changeHandler}                   
                         />                        
-                        
+                        <label htmlFor="password">Пароль</label>
                         </div>
 
 

@@ -18,7 +18,7 @@ export const useAuth = () => {
     const logout = useCallback( () => {
         setToken(null)
         setUserId(null)
-        localStorage.remeveItem(storageName)
+        localStorage.removeItem(storageName)
     },[])
 
     useEffect( () => {
