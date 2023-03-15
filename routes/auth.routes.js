@@ -15,8 +15,10 @@ router.post(
     ],
     async (req, res) => {
     try{
-        const errors = validationResult(req)
 
+        
+        const errors = validationResult(req)
+        
         if(!errors.isEmpty()){
             return res.status(400).json({
                 errors: errors.array(),
@@ -24,13 +26,16 @@ router.post(
             })
         }
 
-        const {email, password} = req.body
-        const candidate = await User.findOne({ email }) 
+        const {email, password} = req.body       
+        const candidate = await User.findOne({ email })
+        
     if(candidate){
         return res.status(400).json({ message: 'Такой пользователь уже существует' })
     }
+    
     const hashedPassword = await bcrypt.hash(password, 12)
     
+
     const user = new User({ email, password: hashedPassword })
     
 
