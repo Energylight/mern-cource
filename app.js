@@ -12,6 +12,7 @@ app.use(express.json({ extended: true }))
 // Подключение маршрутов для авторизации и работы с ссылками
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/link', require('./routes/link.routes'))
+app.use('/t', require('./routes/redirect.routes'))
 
 // Установка порта на котором будет запущено приложение, берется из конфига, если не указан, то по умолчанию 3000
 const PORT = config.get('port') || 3000
