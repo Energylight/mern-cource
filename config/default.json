@@ -1,5 +1,5 @@
 {
-    "port": 5000,
+    "port": 5000, 
     "jwtSecret": "energylight87 saitama mern",
     "mongoUri": "mongodb+srv://energylight87:123qwe@cluster0.uly54aa.mongodb.net/mern-cource?retryWrites=true&w=majority",
     "baseUrl": "http://localhost:5000"

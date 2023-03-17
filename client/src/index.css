@@ -1,28 +1,30 @@
+/* Импорт стилей Materialize */
 @import "~materialize-css/dist/css/materialize.min.css";
 
+/* Класс с отступом в 10px справа */
 .margin-right-10 {
     margin-right: 10px;
 }
 
+/* Стили для желтого инпута */
 input.yellow-input {
-    border-bottom: 1px solid #fff!important;
-    box-shadow: 0 1px 0 0 #fff!important;
-    color:#fff;
-    
+    border-bottom: 1px solid #fff!important; /* Убираем нижнюю границу */
+    box-shadow: 0 1px 0 0 #fff!important; /* Убираем тень */
+    color:#fff; /* Цвет текста */
 }
 
+/* Стили для желтого инпута и связанной с ним label */
 input.yellow-input + label {    
-    color:#fff!important;
+    color:#fff!important; /* Цвет текста label */
 }
 
+/* Стили для желтого инпута при фокусе и связанной с ним label */
 input.yellow-input:focus + label {    
-    color:#ffeb3b!important;    
+    color:#ffeb3b!important;    /* Изменяем цвет текста label при фокусе на инпут */
 }
 
-
+/* Стили для желтого инпута при фокусе */
 input.yellow-input:focus {
-    border-bottom: 1px solid #ffeb3b!important;
-    box-shadow: 0 1px 0 0 #ffeb3b!important;
-    
+    border-bottom: 1px solid #ffeb3b!important; /* Добавляем желтую нижнюю границу при фокусе */
+    box-shadow: 0 1px 0 0 #ffeb3b!important; /* Добавляем желтую тень при фокусе */    
 }
-
