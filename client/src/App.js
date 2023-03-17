@@ -16,11 +16,11 @@ function App() {
   
   // Возвращаем основной компонент приложения
   return (
-    <AuthContext.Provider value={{ token, login, logout, userId, isAuthenticated }}> // Оборачиваем приложение в AuthContext.Provider, чтобы передать авторизационные данные
-      <BrowserRouter> // Оборачиваем приложение в BrowserRouter, чтобы применить роутинг
-        {isAuthenticated && <Navbar />} {/* Выводим компонент навигации, если пользователь авторизован */}
+    <AuthContext.Provider value={{ token, login, logout, userId, isAuthenticated }}> 
+      <BrowserRouter> 
+        {isAuthenticated && <Navbar />} 
         <div className="container">
-          {routes} {/* Выводим дочерние компоненты соответственно выбранным роутам */}
+          {routes} 
         </div>
       </BrowserRouter>
     </AuthContext.Provider>

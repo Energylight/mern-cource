@@ -1,6 +1,6 @@
 // импортируем React и ReactDOM
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 
 // импортируем index.css, компонент App и функцию reportWebVitals
 import './index.css'
