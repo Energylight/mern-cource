@@ -2,7 +2,7 @@
 import { useState, useEffect, useContext } from "react"
 import { AuthContext } from "../context/AuthContext"
 import { useHttp } from "../hooks/http.hook"
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 // Экспортируем компонент
 export const CreatePage = () => {

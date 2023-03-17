@@ -8,6 +8,7 @@ const storageName = 'userData'
 export const useAuth = () => {
     // С помощью useState создаем состояние token и userId
     const [token, setToken] = useState(null)
+    const [ready, setReady] = useState(false)
     const [userId, setUserId] = useState(null)
 
     // Создаем функцию login, которая принимает параметры jwtToken и id 
@@ -36,8 +37,9 @@ export const useAuth = () => {
         if(data && data.token){
             login(data.token, data.userId)
         }
+        setReady(true)
     }, [login])
 
     // Возвращаем объект с функциями login и logout, а также с состояниями token и userId
-    return { login, logout, token, userId }
+    return { login, logout, token, userId, ready }
 }

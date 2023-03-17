@@ -1,10 +1,10 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from 'react'
 // Импортируем контекст авторизации
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from '../context/AuthContext'
 // Импортируем кастомный хук для отправки http запросов
-import { useHttp } from "../hooks/http.hook";
+import { useHttp } from '../hooks/http.hook'
 // Импортируем кастомный хук для вывода системных сообщений
-import { useMessage } from "../hooks/message.hook";
+import { useMessage } from '../hooks/message.hook'
 
 export const AuthPage = () => {
 

@@ -1,20 +1,20 @@
 // Подключение необходимых модулей
-const express = require('express');
-const config = require('config');
-const mongoose = require('mongoose');
+const express = require('express')
+const config = require('config')
+const mongoose = require('mongoose')
 
 // Создание приложения
-const app = express();
+const app = express()
 
 // Настройка приложения для работы с JSON
-app.use(express.json({ extended: true }));
+app.use(express.json({ extended: true }))
 
 // Подключение маршрутов для авторизации и работы с ссылками
-app.use('/api/auth', require('./routes/auth.routes'));
-app.use('/api/link', require('./routes/link.routes'));
+app.use('/api/auth', require('./routes/auth.routes'))
+app.use('/api/link', require('./routes/link.routes'))
 
 // Установка порта на котором будет запущено приложение, берется из конфига, если не указан, то по умолчанию 3000
-const PORT = config.get('port') || 3000;
+const PORT = config.get('port') || 3000
 
 // Функция, которая запускает приложение и подключается к базе данных
 async function start(){
@@ -35,4 +35,4 @@ async function start(){
 }
 
 // Вызов функции старта приложения
-start();
+start()

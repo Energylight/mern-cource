@@ -15,7 +15,7 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);
+)
 
 // вызываем функцию reportWebVitals
-reportWebVitals();
+reportWebVitals()

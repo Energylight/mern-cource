@@ -6,13 +6,13 @@
 const reportWebVitals = onPerfEntry => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry); // измерение и передача значения  Cumulative Layout Shift (CLS) в колбек
-      getFID(onPerfEntry); // измерение и передача значения First Input Delay (FID) в колбек
-      getFCP(onPerfEntry); // измерение и передача значения First Contentful Paint (FCP) в колбек
-      getLCP(onPerfEntry); // измерение и передача значения Largest Contentful Paint (LCP) в колбек
-      getTTFB(onPerfEntry); // измерение и передача значения Time to First Byte (TTFB) в колбек
-    });
+      getCLS(onPerfEntry) // измерение и передача значения  Cumulative Layout Shift (CLS) в колбек
+      getFID(onPerfEntry) // измерение и передача значения First Input Delay (FID) в колбек
+      getFCP(onPerfEntry) // измерение и передача значения First Contentful Paint (FCP) в колбек
+      getLCP(onPerfEntry) // измерение и передача значения Largest Contentful Paint (LCP) в колбек
+      getTTFB(onPerfEntry) // измерение и передача значения Time to First Byte (TTFB) в колбек
+    })
   }
-};
+}
 
-export default reportWebVitals;
+export default reportWebVitals

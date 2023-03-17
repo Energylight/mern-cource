@@ -1,8 +1,11 @@
+import {useState} from 'react'
 
+import { Loader } from '../components/Loader'
 export const LinksPage = () => {
+    const [links, setLinks] = useState([])
     return (
         <div>
-            <h1>Links Page</h1>
+            <Loader />
         </div>
     )
 }
